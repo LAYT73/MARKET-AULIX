@@ -20,4 +20,5 @@ Route::get('/', function () {
     return view('test');
 });
 
-Route::post('/auth', [AuthController::class, 'index']);
+Route::post('/reg', [AuthController::class, 'registration']);
+Route::post('/auth', [AuthController::class, 'auth']);

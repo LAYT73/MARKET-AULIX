@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <form action="auth" method="post">
+    <form action="reg" method="post">
         @csrf
         <input type="text" name="name" id="" placeholder="Имя"><br>
         <input type="text" name="last_name" id="" placeholder="Фамилия"><br>
@@ -16,6 +16,11 @@
         <input type="password" name="pass" id="" placeholder="Пароль"><br>
         <input type="submit" value="Регистрация"><br>
     </form>
-
+    <form action="auth" method="post">
+        @csrf
+        <input type="text" name="login" id="" placeholder="Логин"><br>
+        <input type="password" name="pass" id="" placeholder="Пароль"><br>
+        <input type="submit" value="Авторизация"><br>
+    </form>
 </body>
 </html>

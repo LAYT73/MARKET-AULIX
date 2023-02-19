@@ -5,16 +5,21 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\User;
 use App\Http\Requests\AuthRequest;
+use App\Http\Requests\RegistrationRequest;
 
 class AuthController extends Controller
 {
-    public function index(AuthRequest $req){
-        
+    public function registrtion(RegistrationRequest $req){
+        $hash = bcrypt($req->pass);
         $user = User::create(['name'=>$req->name,
         'last_name'=>$req->last_name,
         'login'=>$req->login,
-        'password'=>$req->pass]);
+        'password'=>$hash]);
+        return redirect()->back();
+    }
 
+    public function auth(AuthRequest $req){
+        
         return redirect()->back();
     }
 
