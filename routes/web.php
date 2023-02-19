@@ -18,7 +18,12 @@ use App\Http\Controllers\AuthController;
 
 Route::get('/', function () {
     return view('test');
+})->middleware('check.user');
+
+Route::get('/success', function () {
+    return view('success');
 });
 
 Route::post('/reg', [AuthController::class, 'registration']);
 Route::post('/auth', [AuthController::class, 'auth']);
+Route::post('/logout', [AuthController::class, 'logout']);

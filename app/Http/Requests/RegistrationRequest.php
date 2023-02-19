@@ -25,7 +25,7 @@ class RegistrationRequest extends FormRequest
     {
         return [
             'login' => 'required|min:6',
-            'pass' => 'required|min:8',
+            'pass' => 'required|min:8|confirmed',
         ];
     }
 }

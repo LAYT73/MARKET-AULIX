@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 | routes are loaded by the RouteServiceProvider within a group which
 | is assigned the "api" middleware group. Enjoy building your API!
 |
+|   Тут тоже ничего не трогать
+|
 */
 
 Route::post('user/{id}', [AuthController::class, 'user_one']);
