@@ -4,6 +4,10 @@
   display: none;
 }
 
+.sidebar {
+  display: none;
+}
+
 body {
   font-family: 'Inter', sans-serif;
   background: #fff;
@@ -197,11 +201,24 @@ body {
   font-size: 20px;
 }
 
+.header__mobile {
+  display: none;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+} 
+
 @media (max-width: 768px) {
-    .sidebar {
-      display: block;
+    .header {
+      justify-content: center;
+    }
+    .header__logo {
+      display: none;
     }
     .header__input {
+      display: none;
+    }
+    .header__buttons {
       display: none;
     }
     .header__dropdown {
@@ -209,13 +226,6 @@ body {
     }
     .header__mobile {
       display: flex;
-      justify-content: left;
-    }
-    .header {
-      justify-content: center;
-    }
-    .header__logo {
-      display: none;
     }
 }
 
@@ -242,9 +252,15 @@ body {
 .sidebar__nav_item {
   display: flex;
   align-items: center;
-  margin-bottom: 50px;
+  height: 48px;
+  margin-bottom: 20px;
+  padding-left: 10px;
 }
 
+.sidebar__nav_item:hover {
+  cursor: pointer;
+  background: #ddd;
+}
 .sidebar__nav_item:first-child {
   margin-top: 10px;
 }
@@ -258,4 +274,13 @@ body {
   margin-top: 4px;
   font-size: 20px;
   margin-left: 16px;
+}
+
+.mobile-icons {
+  display: flex;
+  gap: 30px;
+}
+
+.burger:hover {
+  cursor: pointer;
 }

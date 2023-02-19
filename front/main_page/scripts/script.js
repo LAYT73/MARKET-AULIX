@@ -1,4 +1,6 @@
 const modalContent = document.querySelector('.sidebar');
+const body = document.querySelector('body');
+
 
 let touchstartX = 0;
 let touchendX = 0;
@@ -16,14 +18,23 @@ window.addEventListener('touchend', function(event) {
   }
 });
 
+// Добавляем обработчик события клика на весь документ
+
+
+
+
 function closeModal() {
-  modalContent.style.transition = 'transform .3s linear'
-  modalContent.style.transform = 'translateX(-600px)';
+  modalContent.style.transition = 'transform .1s linear'
+  modalContent.style.transform = `translateX(-100%)`;
+  body.style.backgroundColor = '#fff'
   const close = () => {
     modalContent.style.display = 'none';
   }
   setTimeout(close, 1000);
+  header.style.display = 'flex';
 }
+
+
 
 
 const sidebarNav = document.querySelector('.sidebar__nav')
@@ -56,17 +67,21 @@ for (let i in images) {
 }
 
 const headerMobile = document.querySelector('.header__mobile')
+const header = document.querySelector('.header')
 
-const burgerImg = document.createElement('img')
-burgerImg.src = './img/icons/mobile-header/burger.svg';
-burgerImg.style.width = '30px'
+const burger = document.createElement('img')
+burger.src = './img/icons/mobile-header/burger.svg';
+burger.style.width = '50px'
+burger.classList.add('burger')
 
-headerMobile.appendChild(burgerImg)
+headerMobile.appendChild(burger)
+
+
 
 headerMobile.innerHTML += `
 <a href="#" class="header__mobile__logo">
 <div>
-    <img src='img/logo.svg' alt="" width="150px">
+    <img src='img/logo.svg' alt="" width="180px">
 </div>
 </a>
 `
@@ -77,8 +92,30 @@ const profileImg = document.createElement('img')
 cartImg.src = './img/icons/mobile-header/cart.svg';
 profileImg.src = './img/icons/mobile-header/profile.svg';
 
-cartImg.style.width = '30px';
-profileImg.style.width = '24px';
+cartImg.style.width = '40px';
+profileImg.style.width = '34px';
 
-headerMobile.appendChild(cartImg)
-headerMobile.appendChild(profileImg)
+const div = document.createElement('div')
+div.classList.add('mobile-icons')
+
+div.appendChild(cartImg)
+div.appendChild(profileImg)
+
+headerMobile.appendChild(div)
+
+
+headerMobile.addEventListener('click', function(event) {
+  if (event.target.classList.contains('burger')) {
+    openSidebar();
+  }
+});
+
+function openSidebar() {
+  modalContent.style.transform = `translateX(0)`;
+  modalContent.style.display = 'block';
+  header.style.display = 'none';
+  body.style.backgroundColor = '#636363'
+}
+
+
+// добавляем обработчик клика на элемент body
