@@ -64,6 +64,7 @@ body {
   border-right: 1px solid #0D6EFD;
   font-family: 'Inter', sans-serif; 
   font-size: 16px;
+  border-radius: 0;
 }
 
 .header__input_btn {
