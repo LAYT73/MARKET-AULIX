@@ -59,13 +59,14 @@ const headerMobile = document.querySelector('.header__mobile')
 
 const burgerImg = document.createElement('img')
 burgerImg.src = './img/icons/mobile-header/burger.svg';
+burgerImg.style.width = '30px'
 
 headerMobile.appendChild(burgerImg)
 
 headerMobile.innerHTML += `
 <a href="#" class="header__mobile__logo">
 <div>
-    <img src='img/logo.svg' alt="" width="120px">
+    <img src='img/logo.svg' alt="" width="150px">
 </div>
 </a>
 `
@@ -75,6 +76,9 @@ const profileImg = document.createElement('img')
 
 cartImg.src = './img/icons/mobile-header/cart.svg';
 profileImg.src = './img/icons/mobile-header/profile.svg';
+
+cartImg.style.width = '30px';
+profileImg.style.width = '24px';
 
 headerMobile.appendChild(cartImg)
 headerMobile.appendChild(profileImg)
