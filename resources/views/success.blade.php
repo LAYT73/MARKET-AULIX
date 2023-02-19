@@ -8,6 +8,7 @@
 </head>
 <body>
     <h1>Success</h1>
+    <h3>{{ auth()->user()->login }}</h3>
     <form action="/logout" method="post">
         @csrf
         <input type="submit" value="Выход">
