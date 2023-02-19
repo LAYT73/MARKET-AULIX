@@ -45,6 +45,10 @@ body{
 .products-path__item:first-child{
     margin-left: 0;
 }
+/*main*/
+.main{
+    display: flex;
+}
 /*filters block*/
 .product-filters{
     width: 240px;
@@ -54,6 +58,11 @@ body{
 
 }
 .filter-content{
+    max-height: 0;
+    overflow: hidden;
+    transition: .2s;
+}
+.see-more{
     max-height: 0;
     overflow: hidden;
     transition: .2s;
@@ -91,7 +100,9 @@ body{
     border: none;
     color:#0D6EFD;
     cursor: pointer;
+    margin-bottom: 20px;
 }
 .active img{
     transform: rotate(180deg);
 }
+/*PRODUCT LIST*/
