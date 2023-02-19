@@ -15,4 +15,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('user/{id}', [AuthController::class, 'user_one']);
+Route::post('user/{id}', [AuthController::class, 'user_one']);
+Route::post('user', [AuthController::class, 'user_all']);

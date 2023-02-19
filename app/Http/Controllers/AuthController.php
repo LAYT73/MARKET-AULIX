@@ -21,4 +21,8 @@ class AuthController extends Controller
     public function user_one(User $id){
         return response()->json($id);
     }
+
+    public function user_all(){
+        return response()->json(User::all());
+    }
 }
