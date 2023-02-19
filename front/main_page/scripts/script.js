@@ -117,5 +117,10 @@ function openSidebar() {
   body.style.backgroundColor = '#636363'
 }
 
-
-// добавляем обработчик клика на элемент body
+window.addEventListener('resize', () => {
+  const media = window.matchMedia('(min-width: 769px)')
+  if (media.matches) {
+    modalContent.style.display = 'none';
+    closeModal();
+  }
+})

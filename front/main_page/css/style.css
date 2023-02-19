@@ -54,6 +54,7 @@ body {
   border-radius: 10px 0 0 10px;
   font-size: 18px;
   font-family: 'Inter', sans-serif;
+  padding-left: 20px;
 }
 
 .header__input_select {
@@ -109,7 +110,7 @@ body {
   }
 
   .header__logo {
-    margin-left: -30px;
+    margin-left: -10px;
   }
 
   .header__dropdown {
@@ -229,8 +230,7 @@ body {
     }
 }
 
-
-@media (max-width: 2000px) and (min-width: 1500px) {
+@media (min-width: 769px) {
   .sidebar {
     display: none;
   }
