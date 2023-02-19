@@ -17,4 +17,8 @@ class AuthController extends Controller
 
         return redirect()->back();
     }
+
+    public function user_one(User $id){
+        return response()->json($id);
+    }
 }
