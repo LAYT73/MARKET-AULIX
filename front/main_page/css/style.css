@@ -283,6 +283,7 @@ FOOTER BOTTOM */
   font-size: 18px;
   justify-content: space-between;
   padding: 0 130px;
+  position: relative;
 }
 
 .footer__bottom_lang {
@@ -297,6 +298,7 @@ FOOTER BOTTOM */
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   padding: 10px;
   display: none;
+  bottom: 50%;
 }
 
 .language-dropdown_content span {
@@ -314,7 +316,6 @@ FOOTER BOTTOM */
 
 .language-dropdown_content.show {
   display: block;
-  bottom: 7%;
 }
 
 .language-dropdown_content.show span {
@@ -469,3 +470,6 @@ ADAPTIVE */
   }
 }
 
+.a {
+  height: 65.5vh;
+}
