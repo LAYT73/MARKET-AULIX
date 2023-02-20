@@ -181,7 +181,7 @@ CUSTOM RADIO*/
 }
 
 /*PRODUCT LIST*/
-.products-list{
+.products-list-wrapper{
     width: 926px;
 }
 /*top block*/
@@ -232,4 +232,32 @@ CUSTOM RADIO*/
 }
 .list:hover, .grid:hover{
     background-color:#EFF2F4;
+}
+/*settings*/
+.product-list__settings{
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+}
+.setting-item{
+    display: inline-flex;
+    align-items: center;
+    padding: 6px;
+    border: 1px solid #0b76ef;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left:10px;
+}
+.setting-item:first-child{
+    margin-left: 0;
+}
+.setting-item img{
+    margin-left: 12px;
+}
+.clear-all{
+    cursor: pointer;
+    background: transparent;
+    border:none;
+    color:#0b76ef;
+    margin-left: 18px;
 }
