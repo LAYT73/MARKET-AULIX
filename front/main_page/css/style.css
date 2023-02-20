@@ -314,6 +314,7 @@ FOOTER BOTTOM */
 
 .language-dropdown_content.show {
   display: block;
+  bottom: 7%;
 }
 
 .language-dropdown_content.show span {
@@ -467,3 +468,4 @@ ADAPTIVE */
     gap: 30px ;
   }
 }
+
