@@ -57,6 +57,7 @@ BANNER */
 
 .banner {
   background: url('../img/main_page/banner/banner.jpg');
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 324px;
@@ -143,6 +144,7 @@ LEFT SECTION */
   margin: 18px 0;
   color: white;
   font-size: 20px;
+  font-weight: 300;
 }
 
 .sale p {
@@ -160,4 +162,30 @@ LEFT SECTION */
 
 .quote p {
   max-width: 144px;
+}
+
+/* ======================================
+ADAPTIVE */
+
+@media (max-width: 950px) {
+  .section-main__menu {
+    display: none;
+  }
+  .section-main__left {
+    display: none;
+  }
+  .section-main {
+    border: none;
+    max-width: none;
+    padding: 0;
+  }
+  .main {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .banner {
+  height: 230px;
+  }
 }
