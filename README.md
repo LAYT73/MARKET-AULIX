@@ -1,4 +1,4 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="readme/aulix-title2.jpg" width="100%" alt="Laravel Logo"></a></p>
+<p align="center"><a href="https://github.com/LAYT73/MARKET-AULIX" target="_blank"><img src="readme/aulix-title2.jpg" width="100%" alt="Laravel Logo"></a></p>
 
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?color=f0295a&lines=Pet-project+by+AULIX)](https://github.com/LAYT73/MARKET-AULIX)
