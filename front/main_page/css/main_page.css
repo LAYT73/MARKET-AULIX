@@ -136,7 +136,7 @@ LEFT SECTION */
   width: 200px;
 }
 
-.sale {
+.saler {
   padding: 16px;
   max-width: 188px;
   background: #F38332;
@@ -147,7 +147,7 @@ LEFT SECTION */
   font-weight: 300;
 }
 
-.sale p {
+.saler p {
   max-width: 144px;
 }
 
@@ -188,4 +188,91 @@ ADAPTIVE */
   .banner {
   height: 230px;
   }
+}
+
+/* =============================
+SECTION SALE */
+
+.section-sale {
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
+  max-width: calc(100vw - 18%);
+  margin: 0 auto;
+  border: 1px solid #DEE2E7;
+  border-radius: 6px;
+  background: #fff;
+  margin-top: 10px;
+}
+
+.countdown {
+  margin-top: 10px;
+}
+
+.countdown__time_time {
+  background: #606060;
+  border-radius: 4px;
+  width: 45px;
+  height: 50px;
+  text-align: center;
+  color: #fff;
+  padding: 8px;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.countdown__time_time b {
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+.countdown__time {
+  display: flex;
+  gap: 8px;
+}
+
+.section-sale__cards {
+  display: flex;
+  overflow: hidden;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.section-sale__cards::-webkit-scrollbar {
+  display: none; /* для скрытия полосы прокрутки в браузерах на основе WebKit */
+}
+
+.section-sale__cards_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 28px 25px 17px;
+  border-right: 1px solid #E0E0E0;
+  border-left: 1px solid #E0E0E0;
+  height: 100%;
+  flex: 0 0 auto;
+}
+
+.section-sale__cards_card h3 {
+  margin: 35px 0 7px;
+  text-align: center;
+}
+
+.sale {
+  color: #EB001B;
+  background: #FFE3E3;
+  border-radius: 30px;
+  padding: 5px 13px;
+  font-weight: 500;
+  margin: 18px 0;
+}
+
+.divImg {
+  width: 120px;
+  height: 120px;
 }
