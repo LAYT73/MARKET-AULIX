@@ -164,32 +164,6 @@ LEFT SECTION */
   max-width: 144px;
 }
 
-/* ======================================
-ADAPTIVE */
-
-@media (max-width: 950px) {
-  .section-main__menu {
-    display: none;
-  }
-  .section-main__left {
-    display: none;
-  }
-  .section-main {
-    border: none;
-    max-width: none;
-    padding: 0;
-  }
-  .main {
-    padding-top: 0;
-  }
-}
-
-@media (max-width: 700px) {
-  .banner {
-  height: 230px;
-  }
-}
-
 /* =============================
 SECTION SALE */
 
@@ -197,7 +171,7 @@ SECTION SALE */
   display: flex;
   justify-content: space-around;
   gap: 15px;
-  max-width: calc(100vw - 18%);
+  max-width: calc(100vw - 15%);
   margin: 0 auto;
   border: 1px solid #DEE2E7;
   border-radius: 6px;
@@ -207,6 +181,21 @@ SECTION SALE */
 
 .countdown {
   margin-top: 10px;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.countdown h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.countdown p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #8B96A5;
+  margin-bottom: 20px;
 }
 
 .countdown__time_time {
@@ -275,4 +264,42 @@ SECTION SALE */
 .divImg {
   width: 120px;
   height: 120px;
+}
+
+/* ======================================
+ADAPTIVE */
+
+@media (max-width: 950px) {
+  .section-main__menu {
+    display: none;
+  }
+  .section-main__left {
+    display: none;
+  }
+  .section-main {
+    border: none;
+    max-width: none;
+    padding: 0;
+  }
+  .main {
+    padding-top: 0;
+  }
+  .section-sale {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    max-width: none;
+    padding: 0;
+  }
+  .countdown {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 700px) {
+  .banner {
+  height: 230px;
+  }
 }
